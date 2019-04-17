@@ -12,8 +12,8 @@
     <script src="/js/app.js"></script>
     <script src="/js/quill.js"></script>
     <style>
-        .lyrics p {
-            margin: 0;
+        .ql-editor p {
+            font-size: 1.1rem;
         }
     </style>
 </head>

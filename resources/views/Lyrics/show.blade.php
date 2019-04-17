@@ -25,7 +25,7 @@
             <div class="col-lg-12 mt-4">
                 <div class="card">
                     <div class="card-body">
-                        <div class="lyrics">
+                        <div class="ql-editor">
                             {!! $lyrics->lyrics !!}
                         </div>
                     </div>

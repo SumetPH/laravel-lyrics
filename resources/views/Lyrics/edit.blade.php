@@ -40,10 +40,29 @@
     </div>
 </div>
 
-
 <script>
+    var toolbarOptions = [
+        ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+        ['blockquote'],
+
+        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+        [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+
+
+        [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+        [{ 'align': [] }],
+
+        [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+        [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+
+        ['clean']                                         // remove formatting button
+    ];
+
     var quill = new Quill('#editor', {
-      theme: 'snow'
+        modules: {
+            toolbar: toolbarOptions
+        },
+        theme: 'snow'
     });
     
     $(document).ready(function () {
