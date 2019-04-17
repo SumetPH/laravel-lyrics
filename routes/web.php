@@ -11,9 +11,7 @@
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'LyricsController@index');
 
 Route::resource('lyrics', 'LyricsController');
 Route::resource('word', 'WordController');
